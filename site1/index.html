@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Car Selector</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__item">
+          <div class="header__item-left">
+            <img
+              src="./images/logo.png"
+              alt="Logo"
+              class="header__item-logo-img"
+              width="1500px" />
+            <h2 class="header__item-logo-text">Car Selector</h2>
+          </div>
+          <div class="hamburger-menu">
+            <button id="burger" class="btn-burger" aria-label="Открыть меню">
+              <svg
+                class="svg-btn"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="header__item-right">
+            <nav>
+              <ul class="navbar">
+                <li><a href="#" class="navbar-text">Главная</a></li>
+                <li><a href="#" class="navbar-text">Статьи</a></li>
+                <li><a href="#" class="navbar-text">Таблица</a></li>
+                <li><a href="#" class="navbar-text">Обратная связь</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div id="mobileNav" class="mobile-nav">
+          <a href="" class="mobile-nav-link">Главная</a>
+          <a href="" class="mobile-nav-link">Статьи</a>
+          <a href="" class="mobile-nav-link">Таблица</a>
+          <a href="" class="mobile-nav-link">Обратная связь</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="main-flex">
+          <div class="main-left">
+            <section>
+              <h2 class="section-title">Избранные автомобили</h2>
+              <div class="favorit-section-back">
+                <div id="slider" class="favorit-slides">
+                  <div class="slides-item">
+                    <img
+                      src="./images/Tesla.jpeg"
+                      alt=""
+                      class="slides-img"
+                      width="900px" />
+                    <div>
+                      <h3 class="favorit-title">
+                        Tesla Model S — Электрический флагман
+                      </h3>
+                      <p class="favorit-text">
+                        Высокая скорость, большой запас хода и передовые
+                        ассистенты вождения.
+                      </p>
+                      <p class="favorit-price">Цена: от 80 000 €</p>
+                    </div>
+                  </div>
+                  <div class="slides-item">
+                    <img
+                      src="./images/Tesla.jpeg"
+                      alt=""
+                      class="slides-img"
+                      width="900px" />
+                    <div>
+                      <h3 class="favorit-title">
+                        Tesla Model S — Электрический флагман
+                      </h3>
+                      <p class="favorit-text">
+                        Высокая скорость, большой запас хода и передовые
+                        ассистенты вождения.
+                      </p>
+                      <p class="favorit-price">Цена: от 80 000 €</p>
+                    </div>
+                  </div>
+                  <div class="slides-item">
+                    <img
+                      src="./images/Tesla.jpeg"
+                      alt=""
+                      class="slides-img"
+                      width="900px" />
+                    <div>
+                      <h3 class="favorit-title">
+                        Tesla Model S — Электрический флагман
+                      </h3>
+                      <p class="favorit-text">
+                        Высокая скорость, большой запас хода и передовые
+                        ассистенты вождения.
+                      </p>
+                      <p class="favorit-price">Цена: от 80 000 €</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="favorit-control">
+                  <button id="prev-btn" class="control-back-next">
+                    ⬅ Назад
+                  </button>
+                  <div class="control-circle">
+                    <button
+                      class="btn-circle active"
+                      data-slide="0"
+                      aria-label="Показать слайд 1"></button>
+                    <button
+                      class="btn-circle"
+                      data-slide="1"
+                      aria-label="Показать слайд 2"></button>
+                    <button
+                      class="btn-circle"
+                      data-slide="2"
+                      aria-label="Показать слайд 3"></button>
+                  </div>
+                  <button id="next-btn" class="control-back-next">
+                    Вперед ➡
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section>
+              <h2 class="section-title">Статьи</h2>
+              <div class="article">
+                <div class="row">
+                  <article class="article-block">
+                    <img
+                      class="article-img"
+                      src="./images/sport-car-article1.jpeg"
+                      alt="Sport-car"
+                      width="1200px" />
+                    <div class="article__item">
+                      <div>
+                        <h3 class="article__item-title">
+                          Как выбрать электромобиль
+                        </h3>
+                        <p class="article__item-text">
+                          Кратко о том, на что обращать внимание при выборе
+                          электромобиля: батарея, поддержка зарядных станций и
+                          эксплуатационные расходы.
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="article-block">
+                    <img
+                      class="article-img"
+                      src="./images/sport-car-article2.jpeg"
+                      alt="Sport-car"
+                      width="1200px" />
+                    <div class="article__item">
+                      <div>
+                        <h3 class="article__item-title">
+                          Лучшие семейные кроссоверы 2025
+                        </h3>
+                        <p class="article__item-text">
+                          Обзор моделей, которые подойдут для семьи:
+                          безопасность, место для багажа и комфорт.
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="row">
+                  <article class="article-block">
+                    <img
+                      class="article-img"
+                      src="./images/hybrid-car-article3.jpeg"
+                      alt="Sport-car"
+                      width="1200px" />
+                    <div class="article__item">
+                      <div>
+                        <h3 class="article__item-title">
+                          Гибриды: достоинства и компромиссы
+                        </h3>
+                        <p class="article__item-text">
+                          Гибриды сохраняют экономичность при увеличении
+                          дальности пробега — когда это имеет смысл.
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="table-block">
+                <h2 class="section-title table-title">
+                  Таблица - парамеры автомобилей
+                </h2>
+                <div class="table-content">
+                  <table class="table">
+                    <thead>
+                      <tr class="row-gray">
+                        <th class="table-row">Модель</th>
+                        <th class="table-row">Тип</th>
+                        <th class="table-row">Мощность (л.с.)</th>
+                        <th class="table-row">Расход</th>
+                        <th class="table-row">Цена (ориентир)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="table-row">Tesla Model S</td>
+                        <td class="table-row">Электро</td>
+                        <td class="table-row">670</td>
+                        <td class="table-row">- / 600км</td>
+                        <td class="table-row">от 80 000 €</td>
+                      </tr>
+                      <tr class="row-lightgray">
+                        <td class="table-row">BMW X5</td>
+                        <td class="table-row">Дизель/Бензин</td>
+                        <td class="table-row">335</td>
+                        <td class="table-row">9.0 л/100км</td>
+                        <td class="table-row">от 65 000 €</td>
+                      </tr>
+                      <tr>
+                        <td class="table-row">Toyota Corolla</td>
+                        <td class="table-row">Бензин/Гибрид</td>
+                        <td class="table-row">139</td>
+                        <td class="table-row">5.6 л/100км</td>
+                        <td class="table-row">от 22 000 €</td>
+                      </tr>
+                      <tr class="row-lightgray">
+                        <td class="table-row">Audi A6</td>
+                        <td class="table-row">Бензин/Гибрид</td>
+                        <td class="table-row">255</td>
+                        <td class="table-row">7.4 л/100км</td>
+                        <td class="table-row">от 54 000€</td>
+                      </tr>
+                      <tr>
+                        <td class="table-row">Skoda Octavia</td>
+                        <td class="table-row">Бензин</td>
+                        <td class="table-row">150</td>
+                        <td class="table-row">6.2 л/100км</td>
+                        <td class="table-row">от 24 000€</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="feedback-block">
+                <h2 class="section-title">Форма обратной связи</h2>
+                <form class="feedback-content">
+                  <div class="feedback-input">
+                    <label class="feedback-input-title">ФИО</label>
+                    <input
+                      required
+                      type="name"
+                      name="fullname"
+                      class="feedback-input-text"
+                      placeholder="Иванов Иван Иванович" />
+                  </div>
+                  <div class="feedback-input">
+                    <label class="feedback-input-title">Email</label>
+                    <input
+                      required
+                      type="email"
+                      name="email"
+                      class="feedback-input-text"
+                      placeholder="email@domain.com" />
+                  </div>
+                  <div class="feedback-input">
+                    <label class="feedback-input-title">Телефон</label>
+                    <input
+                      required
+                      type="tel"
+                      name="phone"
+                      class="feedback-input-text"
+                      placeholder="+7 900 000-00-00" />
+                  </div>
+                  <div class="feedback-input">
+                    <label class="feedback-input-title">Товар / Услуга</label>
+                    <select name="product" class="feedback-input-text">
+                      <option>Тест-драйв</option>
+                      <option>Покупка нового</option>
+                      <option>Покупка с пробегом</option>
+                      <option>Сервис и гарантия</option>
+                    </select>
+                  </div>
+                  <div class="feedback-input">
+                    <label class="feedback-input-title">Комментарий</label>
+                    <textarea
+                      name="massage"
+                      rows="5"
+                      class="feedback-input-text textarea"
+                      placeholder="Опишите ваш запрос..."></textarea>
+                  </div>
+                  <div>
+                    <button type="submit" class="feedback-btn">
+                      Отправить
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+          <aside class="aside">
+            <h3 class="aside-title">Реклама</h3>
+            <img
+              class="aside-img"
+              src="./images/advertisement.jpeg"
+              alt="Promo"
+              width="600px" />
+            <p class="aside-text">
+              Специальное предложение — кредит на льготных условиях. Узнайте
+              подробнее!
+            </p>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <h3 class="footer-text">Автор: Шулаков Богдан - 2025</h3>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
